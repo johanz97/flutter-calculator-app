@@ -41,13 +41,10 @@ class CalculatorBloc extends Bloc<CalculatorEvent, CalculatorState> {
   }
 
   Stream<CalculatorState> _addNumber(String number) async* {
-    String result = '';
+    String result = number;
     if (state.mathresult == '0') {
-      result = '0';
-      if (number != '0') result = number;
       if (number == '.') result = state.mathresult + number;
     } else {
-      result = number;
       if (state.mathresult.contains('.') && number == '.') {
         result = state.mathresult;
       } else {
