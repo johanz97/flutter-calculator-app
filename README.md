@@ -9,7 +9,9 @@ A mobile application created with Flutter using flutter_bloc as a state manager
   <li type="circle"><h3>Android</h3></li>
 </ul>
 
-![Screenshot_20210924-141729](https://user-images.githubusercontent.com/25967495/134728872-55cd77af-2b10-455b-9319-8c623cf9b865.jpg)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/25967495/134728872-55cd77af-2b10-455b-9319-8c623cf9b865.jpg" width="250" height="500">
+</p>
 
 <h2>Get packages</h2>
 <ul>
