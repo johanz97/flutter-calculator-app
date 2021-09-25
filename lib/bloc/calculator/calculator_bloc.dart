@@ -34,6 +34,7 @@ class CalculatorBloc extends Bloc<CalculatorEvent, CalculatorState> {
       yield state.copyWith(
           firstnumber: state.mathresult,
           mathresult: '0',
+          secondnumber: '0',
           operation: event.operation);
     } else if (event is CalculateResult) {
       yield* _calculateResult();
