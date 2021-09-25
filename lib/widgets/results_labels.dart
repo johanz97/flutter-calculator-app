@@ -22,7 +22,11 @@ class ResultsLabels extends StatelessWidget {
         if (state.firstnumber != '0' && state.secondnumber == '0') {
           return Column(
             children: [
-              SubResult(text: state.firstnumber),
+              SubResult(
+                  text: state.firstnumber.endsWith('.0')
+                      ? state.firstnumber
+                          .substring(0, state.firstnumber.length - 2)
+                      : state.firstnumber),
               SubResult(text: state.operation),
               SubResult(text: ''),
               LineSeparator(),
@@ -40,7 +44,7 @@ class ResultsLabels extends StatelessWidget {
                 text: state.firstnumber.endsWith('.0')
                     ? state.firstnumber
                         .substring(0, state.firstnumber.length - 2)
-                    : state.secondnumber),
+                    : state.firstnumber),
             SubResult(text: state.operation),
             SubResult(
                 text: state.secondnumber.endsWith('.0')
