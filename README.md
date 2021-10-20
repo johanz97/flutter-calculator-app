@@ -17,7 +17,7 @@ A mobile application created with Flutter using flutter_bloc as a state manager
 
 <h2>Get packages</h2>
 <ul>
-  <li type="circle"><h3>flutter packages get</h3></li>
+  <li type="circle"><h3>flutter pub get</h3></li>
 </ul>
 
 <h2>Run App</h2>
